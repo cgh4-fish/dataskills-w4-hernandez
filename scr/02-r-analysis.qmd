@@ -188,7 +188,7 @@ After setting `eval` to `true` in the chunk above, *save this notebook file* and
 
 *Q9. Check GitHub Desktop. Describe the changes that have now been made to `renv.lock`. Why did these packages not get recorded earlier?*
 
-> YOUR ANSWER
+> It added the uiuc themes section to the renv.lock file. This did not get recorded earlier because I had not yet installed the package.
 
 In order to recreate your environment, your collaborator will need to clone your repository and run `renv::restore()` to recreate your environment. Feel free to try it on another computer if you like (not part of this lab).
 

@@ -2425,7 +2425,7 @@ Figure 1: Treated vs. untreated and by number of crops in rotation. Treated co
 <p>After setting <code>eval</code> to <code>true</code> in the chunk above, <em>save this notebook file</em> and run the command <code>renv::snapshot()</code> in your Console. This takes a new snapshot of your currently installed packages and saves them to <code>renv.lock</code>. Hit Y to proceed if prompted.</p>
 <p><em>Q9. Check GitHub Desktop. Describe the changes that have now been made to <code>renv.lock</code>. Why did these packages not get recorded earlier?</em></p>
 <blockquote class="blockquote">
-<p>YOUR ANSWER</p>
+<p>It added the uiuc themes section to the renv.lock file. This did not get recorded earlier because I had not yet installed the package.</p>
 </blockquote>
 <p>In order to recreate your environment, your collaborator will need to clone your repository and run <code>renv::restore()</code> to recreate your environment. Feel free to try it on another computer if you like (not part of this lab).</p>
 </section>
