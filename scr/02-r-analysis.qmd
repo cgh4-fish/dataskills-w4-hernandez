@@ -208,3 +208,18 @@ Quarto supports many different formats. Let's close by rendering this document a
 - [Markdown reference](https://commonmark.org/help/)
 
 
+```{r}
+#| label: computing-environment
+# Computing environment: where, and from which commit, this notebook ran
+git <- function(args) {
+  paste(system2("git", args, stdout = TRUE, stderr = TRUE), collapse = "\n")
+}
+changed <- git(c("status", "--short", "--untracked-files=no"))
+ 
+cat("Host:         ", Sys.info()[["nodename"]], "\n")
+cat("Working dir:  ", getwd(), "\n")
+cat("Git remote:   ", git(c("remote", "get-url", "origin")), "\n")
+cat("Git commit:   ", git(c("rev-parse", "--short", "HEAD")), "\n")
+cat("Changed files:", if (nzchar(changed)) changed else "none", "\n")
+sessionInfo()
+```
