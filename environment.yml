@@ -1,0 +1,7 @@
+name: dataskills-w4
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - jupyterlab
+prefix: /home/cgherz/conda/envs/dataskills-w4
