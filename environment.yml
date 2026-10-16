@@ -2,6 +2,9 @@ name: dataskills-w4
 channels:
   - conda-forge
 dependencies:
+  - python=3.13
   - pandas
   - jupyterlab
-prefix: /home/cgherz/conda/envs/dataskills-w4
+  - matplotlib
+  - ipykernel
+  - seaborn
